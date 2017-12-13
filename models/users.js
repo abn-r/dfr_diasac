@@ -6,7 +6,19 @@ const userSchema = mongoose.Schema({
     unique: true,
     required: [true, "El campo usuario es requerido"]
   },
-  password: String
+  password: String,
+  desc: String,
+  bio: String,
+  email: String,
+  thumbnail: String,
+  post: {
+    type: [],
+    default: []
+  },
+  specialties: {
+    type: [],
+    default: []
+  }
 })
 
 const userModel = mongoose.model('User', userSchema)

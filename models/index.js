@@ -1,8 +1,8 @@
 import User from './users';
-// import Post from './posts';
+import Post from './post';
 
 export default {
   User,
-  // Post,
+  Post,
 };
 
